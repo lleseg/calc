@@ -2,7 +2,7 @@ puts "Fibonacci"
 puts
 print "Ingresá el límite de la serie: "
 
-limite = gets.chomp.to_f
+limite = gets.chomp.to_i
 
 fibonacci_anterior = 0
 fibonacci_actual = 1
