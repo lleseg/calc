@@ -22,9 +22,9 @@ end
 #   ruby 'lib/calc.rb'
 # end
 
-# task :palindrome_checker do
-#   ruby 'lib/06_palindrome_checker.rb'
-# end
+task :palindrome_checker do
+  ruby 'lib/06_palindrome_checker.rb'
+end
 
 # task :bmi do
 #   ruby 'lib/07_bmi.rb'
