@@ -26,9 +26,9 @@ task :palindrome_checker do
   ruby 'lib/06_palindrome_checker.rb'
 end
 
-# task :bmi do
-#   ruby 'lib/07_bmi.rb'
-# end
+task :letter_frequency do
+  ruby 'lib/07_letter_frequency.rb'
+end
 
 # task :bmi do
 #   ruby 'lib/08_bmi.rb'
