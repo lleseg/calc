@@ -10,8 +10,8 @@ task :email_generator do
   ruby 'lib/02_email_generator.rb'
 end
 
-task :usa_grade_conversor do
-  ruby 'lib/03_usa_grade_conversor.rb'
+task :usa_grade_converter do
+  ruby 'lib/03_usa_grade_converter.rb'
 end
 
 task :fibonacci do
