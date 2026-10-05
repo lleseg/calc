@@ -1,51 +1,45 @@
 # frozen_string_literal: true
 
-task default: %w[test]
+task :default do
+  puts `rake -T`
+end
 
+desc 'Body mass index calculator'
 task :bmi do
   ruby 'lib/01_bmi.rb'
 end
 
+desc 'Email address generator'
 task :email_generator do
   ruby 'lib/02_email_generator.rb'
 end
 
+desc 'Convert a 0-10 grade to a US letter grade'
 task :usa_grade_converter do
   ruby 'lib/03_usa_grade_converter.rb'
 end
 
+desc 'Print the Fibonacci series up to a limit'
 task :fibonacci do
   ruby 'lib/04_fibonacci.rb'
 end
 
-# task :calc do
-#   ruby 'lib/calc.rb'
-# end
-
+desc 'Check whether a word is a palindrome'
 task :palindrome_checker do
   ruby 'lib/06_palindrome_checker.rb'
 end
 
+desc 'Count letter frequency in a word'
 task :letter_frequency do
   ruby 'lib/07_letter_frequency.rb'
 end
 
-# task :bmi do
-#   ruby 'lib/08_bmi.rb'
-# end
-
-# task :bmi do
-#   ruby 'lib/09_bmi.rb'
-# end
-
-# task :bmi do
-#   ruby 'lib/10_bmi.rb'
-# end
-
-task :calc do
-  ruby 'lib/calc.rb'
+desc 'Search a text in the .txt files of the current folder'
+task :file_search do
+  ruby 'lib/08_file_search.rb'
 end
 
-task :test do
-  ruby 'spec/calc_test.rb'
+desc 'Basic calculator'
+task :calc do
+  ruby 'lib/calc.rb'
 end
