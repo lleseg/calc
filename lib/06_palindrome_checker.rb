@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 puts "Palíndromos"
 puts
 print "Ingresa la palabra a revisar si es palíndromo: "

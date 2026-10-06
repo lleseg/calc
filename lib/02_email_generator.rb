@@ -1,20 +1,22 @@
-def remover_espacios_texto(texto_crudo)
-  texto_arreglo = texto_crudo.split(' ')
+# frozen_string_literal: true
 
-  texto_sin_espacios = ''
+def remover_espacios_texto(texto_crudo)
+  texto_arreglo = texto_crudo.split
+
+  texto_sin_espacios = +""
 
   texto_arreglo.each { |t| texto_sin_espacios << t }
 
-  return texto_sin_espacios
+  texto_sin_espacios
 end
 
 puts "Generador de email"
 puts
 print "Ingresá tu nombre: "
 
-nombre = gets.chomp.to_s.split(' ')
+nombre = gets.chomp.to_s.split
 
-iniciales_nombre = ''
+iniciales_nombre = +""
 
 nombre.each { |n| iniciales_nombre << n.chr }
 

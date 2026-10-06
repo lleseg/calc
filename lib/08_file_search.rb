@@ -2,7 +2,7 @@
 
 def buscar_entero(clave)
   resultado = {}
-  Dir.glob('*.txt') do |archivo|
+  Dir.glob("*.txt") do |archivo|
     f = File.open(archivo)
     f.each_with_index do |linea, index|
       resultado[index + 1] = archivo if linea.include?(clave)
@@ -14,7 +14,7 @@ end
 
 def buscar_linea(clave)
   resultado = {}
-  Dir.glob('*.txt') do |archivo|
+  Dir.glob("*.txt") do |archivo|
     File.foreach(archivo).each_with_index do |linea, index|
       resultado[index + 1] = archivo if linea.include?(clave)
     end
@@ -22,8 +22,8 @@ def buscar_linea(clave)
   resultado
 end
 
-puts 'Buscar en archivos'
-print 'Clave: '
+puts "Buscar en archivos"
+print "Clave: "
 clave = gets.chomp
 resultado = buscar_linea(clave)
 
@@ -32,5 +32,5 @@ if resultado.length.positive?
     puts "Archivo: #{valor} en línea número : #{clave}"
   end
 else
-  puts 'No lo encontré.'
+  puts "No lo encontré."
 end

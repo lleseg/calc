@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 puts "Calculadora de masa corporal"
 puts
 puts "Categorías:"
@@ -17,6 +19,6 @@ altura = gets.chomp.to_f
 print "Ingresá tu peso en kg: "
 
 peso = gets.chomp.to_f
-bmi = peso / (altura / 100) ** 2
+bmi = peso / ((altura / 100)**2)
 
 puts "Tu índice de masa corporal es: #{bmi}."

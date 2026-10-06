@@ -1,19 +1,21 @@
+# frozen_string_literal: true
+
 def frecuencia_letras(palabra)
-  caracteres = ('a'..'z').to_a + ('A'..'Z').to_a
+  caracteres = ("a".."z").to_a + ("A".."Z").to_a
 
   frecuencia = {}
 
   palabra.each_char do |caracter|
     if caracteres.include?(caracter)
-      unless frecuencia.key?(caracter)
-        frecuencia[caracter] = 1
-      else
+      if frecuencia.key?(caracter)
         frecuencia[caracter] += 1
+      else
+        frecuencia[caracter] = 1
       end
     end
   end
 
-  return frecuencia
+  frecuencia
 end
 
 puts "Frecuencia de las letras"

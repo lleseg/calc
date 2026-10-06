@@ -1,0 +1,12 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'Gemfile'
+    - 'Rakefile'
+
+Style/Documentation:
+  Enabled: false
+
+# Added to avoid updating many files
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
