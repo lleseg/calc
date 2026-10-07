@@ -1,28 +1,28 @@
 # frozen_string_literal: true
 
-print "Ingresá el primer número: "
+print "Enter the first number: "
 n1 = gets.chomp.to_f
-puts "Operaciones disponibles: 1 - Suma, 2 - Resta, 3 - Multiplicación, 4 - División"
-print "Ingresá la operación: "
-operacion = gets.chomp.to_i
-print "Ingresá el segundo número: "
+puts "Available operations: 1 - Addition, 2 - Subtraction, 3 - Multiplication, 4 - Division"
+print "Enter the operation: "
+operation = gets.chomp.to_i
+print "Enter the second number: "
 n2 = gets.chomp.to_f
 
-case operacion
+case operation
 when 1
-  resultado = n1 + n2
-  mensaje = "La suma de ambos números resulta: #{resultado}"
+  result = n1 + n2
+  message = "The sum of both numbers is: #{result}"
 when 2
-  resultado = n1 - n2
-  mensaje = "La resta de ambos números resulta: #{resultado}"
+  result = n1 - n2
+  message = "The difference of both numbers is: #{result}"
 when 3
-  resultado = n1 * n2
-  mensaje = "La multiplicación de ambos números resulta: #{resultado}"
+  result = n1 * n2
+  message = "The product of both numbers is: #{result}"
 when 4
-  resultado = n1 / n2
-  mensaje = "La división de ambos números resulta: #{resultado}"
+  result = n1 / n2
+  message = "The quotient of both numbers is: #{result}"
 else
-  mensaje = "Error, ingresó un operador inexistente"
+  message = "Error: that operation does not exist."
 end
 
-puts mensaje
+puts message

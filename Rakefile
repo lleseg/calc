@@ -4,42 +4,42 @@ task :default do
   puts `rake -T`
 end
 
-desc 'Calculadora de índice de masa corporal'
+desc 'Body mass index calculator'
 task :bmi do
   ruby 'lib/01_bmi.rb'
 end
 
-desc 'Generador de direcciones de email'
+desc 'Email address generator'
 task :email_generator do
   ruby 'lib/02_email_generator.rb'
 end
 
-desc 'Convierte una nota del 0 al 10 a la letra equivalente en USA'
+desc 'Convert a 0-10 grade to a US letter grade'
 task :usa_grade_converter do
   ruby 'lib/03_usa_grade_converter.rb'
 end
 
-desc 'Muestra la serie de Fibonacci hasta un límite'
+desc 'Print the Fibonacci series up to a limit'
 task :fibonacci do
   ruby 'lib/04_fibonacci.rb'
 end
 
-desc 'Verifica si una palabra es un palíndromo'
+desc 'Check whether a word is a palindrome'
 task :palindrome_checker do
   ruby 'lib/06_palindrome_checker.rb'
 end
 
-desc 'Cuenta la frecuencia de cada letra en una palabra'
+desc 'Count how many times each letter appears in a word'
 task :letter_frequency do
   ruby 'lib/07_letter_frequency.rb'
 end
 
-desc 'Busca un texto en los archivos .txt de la carpeta actual'
+desc 'Search for a text in the .txt files of the current folder'
 task :file_search do
   ruby 'lib/08_file_search.rb'
 end
 
-desc 'Calculadora básica'
+desc 'Basic calculator'
 task :calc do
   ruby 'lib/calc.rb'
 end

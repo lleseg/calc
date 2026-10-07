@@ -2,20 +2,20 @@
 
 puts "Fibonacci"
 puts
-print "Ingresá el límite de la serie: "
+print "Enter the limit of the series: "
 
-limite = gets.chomp.to_i
+limit = gets.chomp.to_i
 
-fibonacci_anterior = 0
-fibonacci_actual = 1
+previous_number = 0
+current_number = 1
 
-while fibonacci_actual < limite
-  puts fibonacci_actual
+while current_number < limit
+  puts current_number
 
-  # fibonacci_temp = fibonacci_anterior + fibonacci_actual
+  # next_number = previous_number + current_number
 
-  # fibonacci_anterior = fibonacci_actual
+  # previous_number = current_number
 
-  # fibonacci_actual = fibonacci_temp
-  fibonacci_anterior, fibonacci_actual = fibonacci_actual, fibonacci_actual + fibonacci_anterior
+  # current_number = next_number
+  previous_number, current_number = current_number, current_number + previous_number
 end

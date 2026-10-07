@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-puts "Conversor de notas a USA"
+puts "US grade converter"
 puts
-print "Ingresá tu nota numérica (1 al 10): "
+print "Enter your numeric grade (1 to 10): "
 
-nota = Float(gets.chomp, exception: false)
+grade = Float(gets.chomp, exception: false)
 
-nota_usa = case nota
+us_grade = case grade
            when 9..10 then "A"
            when 8..9 then "B"
            when 7..8 then "C"
@@ -15,8 +15,8 @@ nota_usa = case nota
            when 0..5 then "F"
            end
 
-if nota_usa
-  puts "Tu nota en USA sería la letra #{nota_usa}."
+if us_grade
+  puts "Your US letter grade would be #{us_grade}."
 else
-  puts "Nota inválida."
+  puts "Invalid grade."
 end

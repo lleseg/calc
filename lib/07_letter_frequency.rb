@@ -1,29 +1,29 @@
 # frozen_string_literal: true
 
-def frecuencia_letras(palabra)
-  caracteres = ("a".."z").to_a + ("A".."Z").to_a
+def letter_frequency(word)
+  letters = ("a".."z").to_a + ("A".."Z").to_a
 
-  frecuencia = {}
+  frequency = {}
 
-  palabra.each_char do |caracter|
-    if caracteres.include?(caracter)
-      if frecuencia.key?(caracter)
-        frecuencia[caracter] += 1
+  word.each_char do |character|
+    if letters.include?(character)
+      if frequency.key?(character)
+        frequency[character] += 1
       else
-        frecuencia[caracter] = 1
+        frequency[character] = 1
       end
     end
   end
 
-  frecuencia
+  frequency
 end
 
-puts "Frecuencia de las letras"
+puts "Letter frequency"
 puts
-print "Ingresa la palabra a analizar: "
+print "Enter the word to analyze: "
 
-palabra = gets.chomp.to_s
+word = gets.chomp.to_s
 
-resultado = frecuencia_letras(palabra)
+result = letter_frequency(word)
 
-puts resultado
+puts result

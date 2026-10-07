@@ -1,6 +1,6 @@
 # calc
 
-Small Ruby practice exercises (Mar–Apr 2024): one command-line script per exercise. The scripts' prompts and messages are in Spanish.
+Small Ruby practice exercises (Mar–Apr 2024): one command-line script per exercise.
 
 | Task | Script | What it does |
 | --- | --- | --- |
@@ -35,7 +35,7 @@ RuboCop is configured in `.rubocop.yml`: double-quoted strings, `Gemfile` and `R
 
 - No input validation in `calc` and `bmi`: non-numeric input counts as `0`, and dividing by zero (or a height of `0`) prints `Infinity`.
 - `bmi` lists the categories but does not say which one the result falls in.
-- `palindrome_checker` compares the text as is, so accents and spaces count ("Neuquén" and "Anita lava la tina" are not palindromes).
+- `palindrome_checker` compares the text as is, so accents and spaces count ("Neuquén" and "A man a plan a canal Panama" are not palindromes).
 - `letter_frequency` only counts `a`–`z`, so `ñ` and accented letters are skipped, and uppercase and lowercase letters are counted separately.
 - `file_search` keys results by line number, so when two files match on the same line only one is reported. It searches the folder it is run from; `rake file_search` runs it from the project root.
 

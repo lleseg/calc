@@ -1,35 +1,35 @@
 # frozen_string_literal: true
 
-def remover_espacios_texto(texto_crudo)
-  texto_arreglo = texto_crudo.split
+def remove_spaces(raw_text)
+  words = raw_text.split
 
-  texto_sin_espacios = +""
+  text_without_spaces = +""
 
-  texto_arreglo.each { |t| texto_sin_espacios << t }
+  words.each { |word| text_without_spaces << word }
 
-  texto_sin_espacios
+  text_without_spaces
 end
 
-puts "Generador de email"
+puts "Email generator"
 puts
-print "Ingresá tu nombre: "
+print "Enter your first name: "
 
-nombre = gets.chomp.to_s.split
+first_names = gets.chomp.to_s.split
 
-iniciales_nombre = +""
+initials = +""
 
-nombre.each { |n| iniciales_nombre << n.chr }
+first_names.each { |name| initials << name.chr }
 
-print "Ingresá tu apellido: "
+print "Enter your last name: "
 
-apellido_crudo = gets.chomp.to_s
+raw_last_name = gets.chomp.to_s
 
-apellido = remover_espacios_texto(apellido_crudo)
+last_name = remove_spaces(raw_last_name)
 
-print "Ingresá el nombre de la empresa donde trabajás: "
+print "Enter the name of the company you work for: "
 
-empresa_crudo = gets.chomp.to_s
+raw_company = gets.chomp.to_s
 
-empresa = remover_espacios_texto(empresa_crudo)
+company = remove_spaces(raw_company)
 
-puts "Tu email generado es #{iniciales_nombre.downcase}.#{apellido.downcase}@#{empresa.downcase}.com"
+puts "Your generated email is #{initials.downcase}.#{last_name.downcase}@#{company.downcase}.com"

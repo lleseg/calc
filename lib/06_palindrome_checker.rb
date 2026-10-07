@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-puts "Palíndromos"
+puts "Palindromes"
 puts
-print "Ingresa la palabra a revisar si es palíndromo: "
+print "Enter the word to check: "
 
-palabra = gets.chomp.to_s
+word = gets.chomp.to_s
 
-if palabra.downcase == palabra.downcase.reverse
-  puts "La palabra #{palabra} es un palíndromo."
+if word.downcase == word.downcase.reverse
+  puts "The word #{word} is a palindrome."
 else
-  puts "La palabra #{palabra} no es un palíndromo."
+  puts "The word #{word} is not a palindrome."
 end

@@ -1,24 +1,24 @@
 # frozen_string_literal: true
 
-puts "Calculadora de masa corporal"
+puts "Body mass index calculator"
 puts
-puts "Categorías:"
-puts "Muy flaco - menor a 16"
-puts "Flaco - entre 16 y 17"
-puts "Algo flaco - entre 17 y 18.5"
-puts "Normal - entre 18.5 y 25"
-puts "Sobrepeso - entre 25 y 30"
-puts "Obeso C1 - entre 30 y 35"
-puts "Obeso C2 - entre 35 y 40"
-puts "Obeso C3 - mayor a 40"
+puts "Categories:"
+puts "Severe thinness - below 16"
+puts "Moderate thinness - 16 to 17"
+puts "Mild thinness - 17 to 18.5"
+puts "Normal - 18.5 to 25"
+puts "Overweight - 25 to 30"
+puts "Obese class I - 30 to 35"
+puts "Obese class II - 35 to 40"
+puts "Obese class III - over 40"
 puts
-print "Ingresá tu altura en cm: "
+print "Enter your height in cm: "
 
-altura = gets.chomp.to_f
+height = gets.chomp.to_f
 
-print "Ingresá tu peso en kg: "
+print "Enter your weight in kg: "
 
-peso = gets.chomp.to_f
-bmi = peso / ((altura / 100)**2)
+weight = gets.chomp.to_f
+bmi = weight / ((height / 100)**2)
 
-puts "Tu índice de masa corporal es: #{bmi}."
+puts "Your body mass index is: #{bmi}."

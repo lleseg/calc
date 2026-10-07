@@ -1,36 +1,36 @@
 # frozen_string_literal: true
 
-def buscar_entero(clave)
-  resultado = {}
-  Dir.glob("*.txt") do |archivo|
-    f = File.open(archivo)
-    f.each_with_index do |linea, index|
-      resultado[index + 1] = archivo if linea.include?(clave)
+def search_with_file_open(query)
+  result = {}
+  Dir.glob("*.txt") do |file_name|
+    f = File.open(file_name)
+    f.each_with_index do |line, index|
+      result[index + 1] = file_name if line.include?(query)
     end
     f.close
   end
-  resultado
+  result
 end
 
-def buscar_linea(clave)
-  resultado = {}
-  Dir.glob("*.txt") do |archivo|
-    File.foreach(archivo).each_with_index do |linea, index|
-      resultado[index + 1] = archivo if linea.include?(clave)
+def search_by_line(query)
+  result = {}
+  Dir.glob("*.txt") do |file_name|
+    File.foreach(file_name).each_with_index do |line, index|
+      result[index + 1] = file_name if line.include?(query)
     end
   end
-  resultado
+  result
 end
 
-puts "Buscar en archivos"
-print "Clave: "
-clave = gets.chomp
-resultado = buscar_linea(clave)
+puts "Search in files"
+print "Search text: "
+query = gets.chomp
+result = search_by_line(query)
 
-if resultado.length.positive?
-  resultado.each do |clave, valor|
-    puts "Archivo: #{valor} en línea número : #{clave}"
+if result.length.positive?
+  result.each do |line_number, file_name|
+    puts "File: #{file_name} on line number: #{line_number}"
   end
 else
-  puts "No lo encontré."
+  puts "No matches found."
 end
