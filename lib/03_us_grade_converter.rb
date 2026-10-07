@@ -11,8 +11,7 @@ us_grade = case grade
            when 8..9 then "B"
            when 7..8 then "C"
            when 6..7 then "D"
-           when 5..6 then "E"
-           when 0..5 then "F"
+           when 0..6 then "F"
            end
 
 if us_grade

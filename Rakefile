@@ -16,7 +16,7 @@ end
 
 desc 'Convert a 0-10 grade to a US letter grade'
 task :usa_grade_converter do
-  ruby 'lib/03_usa_grade_converter.rb'
+  ruby 'lib/03_us_grade_converter.rb'
 end
 
 desc 'Print the Fibonacci series up to a limit'
