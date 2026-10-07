@@ -12,13 +12,23 @@ puts "Obese class I - 30 to 35"
 puts "Obese class II - 35 to 40"
 puts "Obese class III - over 40"
 puts
-print "Enter your height in cm: "
 
-height = gets.chomp.to_f
+height = 0.0
 
-print "Enter your weight in kg: "
+until height.positive?
+  print "Enter your height in cm: "
 
-weight = gets.chomp.to_f
+  height = gets.chomp.to_f
+end
+
+weight = 0.0
+
+until weight.positive?
+  print "Enter your weight in kg: "
+
+  weight = gets.chomp.to_f
+end
+
 bmi = weight / ((height / 100)**2)
 
 puts "Your body mass index is: #{bmi}."
