@@ -48,3 +48,8 @@ desc 'Basic calculator'
 task :calc do
   ruby 'lib/10_calc.rb'
 end
+
+desc 'Area code search'
+task :area_code_dictionary do
+  ruby 'lib/11_area_code_dictionary.rb'
+end

@@ -13,6 +13,7 @@ Small Ruby practice exercises (Mar–Apr 2024): one command-line script per exer
 | `letter_frequency` | `lib/07_letter_frequency.rb` | Counts how many times each letter appears |
 | `file_search` | `lib/08_file_search.rb` | Finds a text in the `.txt` files of the current folder (`london.txt` is a sample) |
 | `authenticator` | `lib/09_authenticator.rb` | Checks a username and password against a sample list of users, with up to 4 attempts |
+| `area_code_dictionary` | `lib/11_area_code_dictionary.rb` | Lists some Argentine cities and shows the phone area code of the one you enter, until you answer anything other than `Y` |
 
 ## Run
 
