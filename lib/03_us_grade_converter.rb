@@ -3,7 +3,6 @@
 puts "US grade converter"
 puts
 print "Enter your numeric grade (1 to 10): "
-
 grade = Float(gets.chomp, exception: false)
 
 us_grade = case grade

@@ -14,21 +14,16 @@ puts "Obese class III - over 40"
 puts
 
 height = 0.0
-
 until height.positive?
   print "Enter your height in cm: "
-
   height = gets.chomp.to_f
 end
 
 weight = 0.0
-
 until weight.positive?
   print "Enter your weight in kg: "
-
   weight = gets.chomp.to_f
 end
 
 bmi = weight / ((height / 100)**2)
-
 puts "Your body mass index is: #{bmi}."

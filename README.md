@@ -35,7 +35,6 @@ RuboCop is configured in `.rubocop.yml`: double-quoted strings, `Gemfile` and `R
 ## Known limitations
 
 - `calc` rejects division and modulus by zero, but non-numeric input still counts as `0`.
-- `bmi` asks for the height again until it is greater than `0`, but the weight is not validated: non-numeric input counts as `0`, and negative values give a negative result.
 - `bmi` lists the categories but does not say which one the result falls in.
 - `palindrome_checker` ignores case and spaces, but accents still count ("Neuquén" is not a palindrome).
 - `letter_frequency` only counts `a`–`z`, so `ñ` and accented letters are skipped, and uppercase and lowercase letters are counted separately.

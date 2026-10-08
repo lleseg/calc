@@ -3,9 +3,7 @@
 puts "Palindromes"
 puts
 print "Enter the word to check: "
-
 word = gets.chomp.to_s
-
 transformed_word = word.downcase.gsub(" ", "")
 
 if transformed_word == transformed_word.reverse
