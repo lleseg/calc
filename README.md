@@ -1,4 +1,4 @@
-# calc
+# ruby-exercises
 
 Small Ruby practice exercises (Mar–Apr 2024): one command-line script per exercise.
 
