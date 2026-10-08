@@ -39,7 +39,12 @@ task :file_search do
   ruby 'lib/08_file_search.rb'
 end
 
+desc 'Authenticate a user'
+task :authenticator do
+  ruby 'lib/09_authenticator.rb'
+end
+
 desc 'Basic calculator'
 task :calc do
-  ruby 'lib/calc.rb'
+  ruby 'lib/10_calc.rb'
 end
